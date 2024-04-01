@@ -6,6 +6,7 @@ import PopularCategories from "@/components/PopularCategories";
 import Complex from "@/components/Complex";
 import ChooseUs from "@/components/ChooseUs";
 import Catalog from "@/components/Catalog/Catalog";
+import Clients from "@/components/Clients";
 
 const Home = () => {
   const url =
@@ -56,7 +57,7 @@ const Home = () => {
           <Catalog />
 
           {/* Client components */}
-          
+          <Clients />
         </main>
         {/* Footer */}
         <footer></footer>
