@@ -7,6 +7,7 @@ import Complex from "@/components/Complex";
 import ChooseUs from "@/components/ChooseUs";
 import Catalog from "@/components/Catalog/Catalog";
 import Clients from "@/components/Clients";
+import Brands from "@/components/Brands/Brands";
 
 const Home = () => {
   const url =
@@ -58,6 +59,10 @@ const Home = () => {
 
           {/* Client components */}
           <Clients />
+
+          {/* Brads components */}
+
+          <Brands />
         </main>
         {/* Footer */}
         <footer></footer>

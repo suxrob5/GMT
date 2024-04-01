@@ -1,4 +1,6 @@
+// next line
 import Link from "next/link";
+// components
 import HorizontalCarousel from "./main";
 
 const Catalog = () => {
