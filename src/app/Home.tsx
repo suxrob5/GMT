@@ -10,6 +10,8 @@ import Clients from "@/components/Clients";
 import Brands from "@/components/Brands/Brands";
 import AboutCompany from "@/components/About/AboutCompany";
 import News from "@/components/News/News";
+import Map from "@/components/Map";
+import Subscribe from "@/components/Subscribe";
 
 const Home = () => {
   return (
@@ -50,7 +52,15 @@ const Home = () => {
 
           {/* News components */}
 
-          <News/>
+          <News />
+
+          {/* Map and questions */}
+
+          <Map />
+
+          {/* SunScribe componets */}
+
+          <Subscribe />
         </main>
         {/* Footer */}
         <footer></footer>
