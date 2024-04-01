@@ -1,5 +1,5 @@
-// compoents
 "use client";
+// compoents
 import Header from "@/components/header/Header";
 import BannerHeader from "@/components/BannerHeader";
 import PopularCategories from "@/components/PopularCategories";
@@ -14,9 +14,13 @@ import Map from "@/components/Map";
 import Subscribe from "@/components/Subscribe";
 import Footer from "@/components/Footer/Footer";
 
+
 const Home = () => {
   return (
     <>
+      
+
+      {/*  */}
       <div>
         {/* Header */}
         <header>
