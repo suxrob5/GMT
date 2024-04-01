@@ -1,10 +1,10 @@
 // next line
 import Link from "next/link";
-import BrandsCarousel from "./BrandsCarousel";
+// btn components
 import { ButtonLeft, ButtonRight } from "../RightLeftBtns";
 import ButtonMy from "../Button";
 // components
-// import HorizontalCarousel from "./main";
+import BrandsCarousel from "./BrandsCarousel";
 
 const Brands = () => {
   return (
@@ -18,7 +18,7 @@ const Brands = () => {
                 <Link href="#">Эксклюзивные поставщики</Link>
               </li>
             </ul>
-          </div>
+          </div>A
         </div>
         <section className="flex w-[70%] max-w-[70%]">
           <BrandsCarousel />

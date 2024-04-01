@@ -9,6 +9,7 @@ import Catalog from "@/components/Catalog/Catalog";
 import Clients from "@/components/Clients";
 import Brands from "@/components/Brands/Brands";
 import AboutCompany from "@/components/About/AboutCompany";
+import News from "@/components/News/News";
 
 const Home = () => {
   return (
@@ -43,9 +44,13 @@ const Home = () => {
 
           <Brands />
 
-          {/* AboutCompany componets */}
+          {/* About company componets */}
 
           <AboutCompany />
+
+          {/* News components */}
+
+          <News/>
         </main>
         {/* Footer */}
         <footer></footer>
