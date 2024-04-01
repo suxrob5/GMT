@@ -12,6 +12,7 @@ import AboutCompany from "@/components/About/AboutCompany";
 import News from "@/components/News/News";
 import Map from "@/components/Map";
 import Subscribe from "@/components/Subscribe";
+import Footer from "@/components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -63,7 +64,9 @@ const Home = () => {
           <Subscribe />
         </main>
         {/* Footer */}
-        <footer></footer>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   );
