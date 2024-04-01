@@ -1,5 +1,8 @@
-import { popularCatecorys } from "@/data/MiniData";
+// my data
+import { clientsData } from "@/data/ClientsData";
+// next image
 import Image from "next/image";
+// marque autoCarousel
 import Marquee from "react-fast-marquee";
 
 const Clients = () => {
@@ -14,11 +17,11 @@ const Clients = () => {
             ПРОЕКТОВ
           </h1>
         </div>
-        <Marquee>
-          {popularCatecorys.map((item) => (
+        <Marquee className="mt-[50px] pb-[50px]">
+          {clientsData.map((item) => (
             <div
               key={item.id}
-              className="m-5 h-[300px] w-[300px] rounded-[10px] border bg-[#F8F7F3FF]"
+              className="m-5 h-[250px] w-[300px] rounded-[10px] border bg-[#F8F7F3FF]"
             >
               <div className="flex items-center justify-center rounded-[10px] bg-white">
                 <Image
@@ -27,7 +30,7 @@ const Clients = () => {
                   className="m-5 rounded-[10px]"
                 />
               </div>
-              <p className="py-5 text-center text-[14px]">{item.title}</p>
+              <p className="py-5 text-center text-[18px]">{item.title}</p>
             </div>
           ))}
         </Marquee>
