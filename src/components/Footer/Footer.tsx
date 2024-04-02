@@ -6,6 +6,7 @@ import Link from "next/link";
 import Company from "./Company";
 import Catalog from "./Catalog";
 import Contacts from "./Contacts";
+// img
 import { MasterCard, Mip, Tg, Vik, Visa, WhatSub } from "@/assets/images";
 // images
 import FooterCoreImg from "@/assets/icons/footerCoreImg.svg";
@@ -62,27 +63,41 @@ const Footer = () => {
             </div>
           </div>
           {/*  */}
-          <ul>
-            <li className="grid grid-cols-1">
+          <ul className="grid grid-cols-1">
+            <li>
               <Link href="#">Партнерская программа</Link>
+            </li>
+            <li>
               <Link href="#">Оптовые продажи</Link>
+            </li>
+            <li>
               <Link href="#">Реквизиты</Link>
             </li>
           </ul>
           {/*  */}
-          <ul>
-            <li className="grid grid-cols-1">
+          <ul className="grid grid-cols-1">
+            <li>
               <Link href="#">Политика конфиденциальности</Link>
+            </li>
+            <li>
               <Link href="#">Условия соглашения</Link>
+            </li>
+            <li>
               <Link href="#">Карта сайта</Link>
             </li>
           </ul>
           <div>
             <Link href="#">Способы оплаты</Link>
             <div className="mt-5 flex items-center justify-between">
-              <MasterCard />
-              <Visa />
-              <Mip />
+              <div className="mx-3">
+                <MasterCard />
+              </div>
+              <div className="mx-3">
+                <Visa />
+              </div>
+              <div className="mx-3">
+                <Mip />
+              </div>
             </div>
           </div>
         </div>

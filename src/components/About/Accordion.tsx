@@ -9,7 +9,10 @@ import { LinkIcon } from "@/assets/images";
 export default function AccordionUsage() {
   return (
     <div>
-      <Accordion defaultExpanded className="bg-[#088269FF]">
+      <Accordion
+        defaultExpanded
+        className="border-none bg-[#088269FF] shadow-none"
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
@@ -30,12 +33,13 @@ export default function AccordionUsage() {
           </span>
           <h1 className="text-[#088269FF]">.</h1>
           <h1 className="text-[#088269FF]">.</h1>
-          <Link href="#" className="mt-[40px] text-white flex items-center">
-            Подробнее <LinkIcon  />
+          <Link href="#" className="mt-[40px] flex items-center text-white">
+            Подробнее <LinkIcon />
           </Link>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="bg-[#088269FF]">
+      {/*  */}
+      <Accordion className="mt-5 border-none bg-[#088269FF] shadow-none">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
@@ -52,7 +56,8 @@ export default function AccordionUsage() {
           </span>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="bg-[#088269FF]">
+      {/*  */}
+      <Accordion className="mt-5 border-none bg-[#088269FF] shadow-none">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
@@ -69,7 +74,8 @@ export default function AccordionUsage() {
           </span>
         </AccordionDetails>
       </Accordion>
-      <Accordion className="bg-[#088269FF]">
+      {/*  */}
+      <Accordion className="mt-5 border-none bg-[#088269FF] shadow-none">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"

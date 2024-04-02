@@ -15,7 +15,7 @@ const HoverManufacturers: React.FC<HoverManufacturersType> = ({
 }) => {
   return (
     <div
-      className={`${isHoverManufacturers !== true ? "hidden" : "grid"} absolute rounded-xl bg-white mt-8 ml-[30px]`}
+      className={`${isHoverManufacturers !== true ? "hidden" : "grid"} absolute z-10 ml-[30px] mt-8 rounded-xl bg-white`}
       onMouseEnter={handleMouseEnterManufacturers}
       onMouseLeave={handleMouseLeaveManufacturers}
     >

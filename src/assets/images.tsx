@@ -235,3 +235,33 @@ export const User = () => {
     </svg>
   );
 }
+
+
+export const Plus = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="-0.5"
+        y="-0.5"
+        width="31"
+        height="31"
+        rx="15.5"
+        transform="matrix(1.19249e-08 -1 -1 -1.19249e-08 31 31)"
+        stroke="#E1DFE7"
+      />
+      <path
+        d="M16 9V23M9 16H23"
+        stroke="#F8F7F3"
+        stroke-width="1.2"
+        stroke-linecap="round"
+      />
+    </svg>
+  );
+};
+

@@ -11,7 +11,7 @@ const Subscribe = () => {
     input.value = "";
   };
   return (
-    <div className="bg-[#E5E4EDFF] mt-[200px]">
+    <div className="mt-[200px] bg-[#E5E4EDFF]">
       <div className="mx-auto flex w-[90%] items-center justify-between">
         <div>
           <Image src={Pochta} alt="pocha" />
@@ -35,8 +35,10 @@ const Subscribe = () => {
             <ButtonMy>Подписаться</ButtonMy>
           </form>
           <div className="mt-5 flex items-center justify-center">
-            <input type="checkbox" className="mx-3" />
-            <p> Я даю согласие на обработку своих персональных данных.</p>
+            <input type="checkbox" className="mx-3" id="cheks" />
+            <label htmlFor="cheks">
+              Я даю согласие на обработку своих персональных данных.
+            </label>
           </div>
         </div>
       </div>

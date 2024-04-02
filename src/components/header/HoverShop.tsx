@@ -15,7 +15,7 @@ const HoverShop:React.FC<HoverShopType> = ({
 }) => {
   return (
     <div
-      className={`${isHoverShop !== true ? "hidden" : "grid"} absolute rounded-[12px] border bg-white right-[30px] mt-[20px]`}
+      className={`${isHoverShop !== true ? "hidden" : "grid"} absolute right-[30px] z-10 mt-[20px] rounded-[12px] border bg-white`}
       onMouseEnter={handleMouseEnterShop}
       onMouseLeave={handleMouseLeaveShop}
     >

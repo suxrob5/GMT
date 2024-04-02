@@ -14,12 +14,9 @@ import Map from "@/components/Map";
 import Subscribe from "@/components/Subscribe";
 import Footer from "@/components/Footer/Footer";
 
-
 const Home = () => {
   return (
     <>
-      
-
       {/*  */}
       <div>
         {/* Header */}
