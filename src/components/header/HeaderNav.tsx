@@ -7,95 +7,105 @@ import User from "@/assets/icons/user.svg";
 import Like from "@/assets/icons/like.svg";
 import Compare from "@/assets/icons/compare.svg";
 import Basket from "@/assets/icons/basket.svg";
-// shadc UI
-import { Button } from "@/components/ui/button";
+
+import { useState } from "react";
+import Register from "../login/Register";
+import { useRouter } from "next/navigation";
+import { DialogClose } from "@radix-ui/react-dialog";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { useState } from "react";
+} from "../ui/dialog";
 
 const HeaderNav = () => {
   const [inptVal1, setinptVal1] = useState("");
   const [inptVal2, setinptVal2] = useState("");
+  const router = useRouter();
 
+  //  const orginData = localStorage.getItem("register");
+  //  const data = orginData ? JSON.parse(orginData) : null;
+
+  const handleLike = () => {};
   const handleClik = () => {};
   const handleSave = () => {
     const data = {
       inptVal1: inptVal1,
       inptVal2: inptVal2,
     };
+
     localStorage.setItem("register", JSON.stringify(data));
+    setinptVal1("");
+    setinptVal2("");
   };
   return (
     <>
+      <Dialog>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle>Регистрация</DialogTitle>
+            <DialogDescription>
+              Make changes to your profile here. Click save when you`re done.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-4">
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="name" className="text-right">
+                Ваш email*
+              </Label>
+              <Input
+                id="name"
+                type="email"
+                className="col-span-3 focus:outline-[#088269FF]"
+                value={inptVal1}
+                onChange={(e) => setinptVal1(e.target.value)}
+              />
+            </div>
+            <div className="grid grid-cols-4 items-center gap-4">
+              <Label htmlFor="username" className="text-right">
+                Пароль*
+              </Label>
+              <Input
+                id="username"
+                className="col-span-3 focus:outline-[#088269FF]"
+                type="password"
+                value={inptVal2}
+                onChange={(e) => setinptVal2(e.target.value)}
+              />
+            </div>
+          </div>
+          <DialogClose asChild>
+            <Button
+              type="submit"
+              onClick={handleSave}
+              className=" rounded-[20px] bg-[#088269FF] hover:bg-[#08826ad2]"
+            >
+              Регистрация
+            </Button>
+          </DialogClose>
+        </DialogContent>
+      </Dialog>
+      {/*  */}
       <nav>
         <ul>
           <li className="flex items-center justify-between">
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button
-                  variant="outline"
-                  onClick={handleClik}
-                  className="mx-3 w-[45px] border-none bg-[#F8F7F3FF] bg-none hover:bg-[#F8F7F3FF]"
-                >
-                  <span className="mx-3 rounded-md p-2 hover:bg-gray-300 hover:bg-opacity-30">
-                    <span className="flex items-center justify-center">
-                      <Image src={User} alt="user icon" />
-                    </span>
-                    <p className="text-center">Войти</p>
-                  </span>
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="sm:max-w-[425px]">
-                <DialogHeader>
-                  <DialogTitle>Регистрация</DialogTitle>
-                  <DialogDescription>
-                    Make changes to your profile here. Click save when you`re
-                    done.
-                  </DialogDescription>
-                </DialogHeader>
-                <div className="grid gap-4 py-4">
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="name" className="text-right">
-                      Ваш email*
-                    </Label>
-                    <Input
-                      id="name"
-                      className="col-span-3"
-                      value={inptVal1}
-                      onChange={(e) => setinptVal1(e.target.value)}
-                    />
-                  </div>
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="username" className="text-right">
-                      Пароль*
-                    </Label>
-                    <Input
-                      id="username"
-                      className="col-span-3"
-                      type="password"
-                      value={inptVal2}
-                      onChange={(e) => setinptVal2(e.target.value)}
-                    />
-                  </div>
-                </div>
-                <DialogFooter>
-                  <Button type="submit" onClick={handleSave}>
-                    Save changes
-                  </Button>
-                </DialogFooter>
-              </DialogContent>
-            </Dialog>
+            <Register
+              handleClik={handleClik}
+              User={User}
+              inptVal1={inptVal1}
+              setinptVal1={setinptVal1}
+              handleSave={handleSave}
+              inptVal2={inptVal2}
+              setinptVal2={setinptVal2}
+            />
             <Link
               href="#"
+              onClick={handleLike}
               className="mx-3 rounded-md p-2 hover:bg-gray-300 hover:bg-opacity-30"
             >
               <span className="flex items-center justify-center">
