@@ -1,3 +1,4 @@
+"use client";
 // next
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +12,7 @@ import mainImg from "@/assets/icons/main.svg";
 import Search from "@/assets/icons/search.svg";
 
 const Header2 = () => {
-  const handleSubmit: (e:FormEvent) => void = (e) => {
+  const handleSubmit: (e: FormEvent) => void = (e) => {
     e.preventDefault();
   };
 

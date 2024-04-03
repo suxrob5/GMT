@@ -6,8 +6,9 @@ import Image from "next/image";
 // components
 import Link from "next/link";
 import BreadcrumbP from "../Breadcrumb";
+import { Card, CardActionArea } from "@mui/material";
 
-const PopularCategories = () => {
+const Main = () => {
   const left = ">";
   return (
     <div className="mt-[30px]">
@@ -16,7 +17,7 @@ const PopularCategories = () => {
       </div>
       <div>
         <div className="mx-auto mt-10 flex w-[90%] justify-between">
-          <div className="rounded-[20px] border">
+          <div className="mt-5 h-[500px] rounded-[20px]  border">
             <div className="p-5">
               <h1 className="mx-1 pb-3 text-[16px] font-[500]">Направления</h1>
               <hr />
@@ -92,19 +93,28 @@ const PopularCategories = () => {
           </div>
           <section className="calogPg w-[70%]">
             {catalogDataPg.map((item) => (
-              <div
+              <Link
+                href={`/catalog/item_${item.id}`}
                 key={item.id}
-                className={`w-[300px] rounded-[10px] border ${item.class} mt-5`}
+                className={item.class}
               >
-                <div className="flex items-center justify-center rounded-[10px] bg-white">
-                  <Image
-                    src={item.img}
-                    alt={item.alt}
-                    className="m-5 rounded-[10px]"
-                  />
+                <div
+                  className={`w-[300px] rounded-[10px] border ${item.class} mt-5`}
+                >
+                  <Card>
+                    <CardActionArea>
+                      <div className="flex items-center justify-center rounded-[10px] bg-white">
+                        <Image
+                          src={item.img}
+                          alt={item.alt}
+                          className="m-5 rounded-[10px]"
+                        />
+                      </div>
+                      <p className="mx-5 py-5 text-[15px]">{item.title}</p>
+                    </CardActionArea>
+                  </Card>
                 </div>
-                <p className="mx-5 py-5 text-[15px]">{item.title}</p>
-              </div>
+              </Link>
             ))}
           </section>
         </div>
@@ -113,4 +123,4 @@ const PopularCategories = () => {
   );
 };
 
-export default PopularCategories;
+export default Main;

@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import { FormEvent } from "react";
 import Pochta from "@/assets/icons/pochta.svg";
