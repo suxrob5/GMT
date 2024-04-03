@@ -63,7 +63,7 @@ const HeaderCatalog = () => {
             <li className="flex items-center justify-between">
               <Link
                 className="mx-3 text-[14px] hover:text-[#07745E] flex items-center "
-                href="#"
+                href="catalog"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >

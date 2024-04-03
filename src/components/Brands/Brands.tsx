@@ -8,7 +8,7 @@ import BrandsCarousel from "./BrandsCarousel";
 
 const Brands = () => {
   return (
-    <div className="mt-[100px]">
+    <div className="mt-[150px]">
       <div className="flex w-[100%] justify-between">
         <div className="w-[30%]">
           <div className="mx-auto mt-[20px] w-[70%]">
@@ -18,7 +18,7 @@ const Brands = () => {
                 <Link href="#">Эксклюзивные поставщики</Link>
               </li>
             </ul>
-          </div>A
+          </div>
         </div>
         <section className="flex w-[70%] max-w-[70%]">
           <BrandsCarousel />

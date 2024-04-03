@@ -1,5 +1,3 @@
-// next line
-import Link from "next/link";
 // btn components
 import { ButtonLeft, ButtonRight } from "../RightLeftBtns";
 import ButtonMy from "../Button";
