@@ -10,7 +10,6 @@ import Basket from "@/assets/icons/basket.svg";
 
 import { useState } from "react";
 import Register from "../login/Register";
-import { useRouter } from "next/navigation";
 import { DialogClose } from "@radix-ui/react-dialog";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
@@ -26,13 +25,7 @@ import {
 const HeaderNav = () => {
   const [inptVal1, setinptVal1] = useState("");
   const [inptVal2, setinptVal2] = useState("");
-  const router = useRouter();
 
-  //  const orginData = localStorage.getItem("register");
-  //  const data = orginData ? JSON.parse(orginData) : null;
-
-  const handleLike = () => {};
-  const handleClik = () => {};
   const handleSave = () => {
     const data = {
       inptVal1: inptVal1,
@@ -95,7 +88,6 @@ const HeaderNav = () => {
         <ul>
           <li className="hidden items-center justify-between sm:flex">
             <Register
-              handleClik={handleClik}
               User={User}
               inptVal1={inptVal1}
               setinptVal1={setinptVal1}
@@ -105,7 +97,6 @@ const HeaderNav = () => {
             />
             <Link
               href="#"
-              onClick={handleLike}
               className="mx-3 rounded-md p-2 hover:bg-gray-300 hover:bg-opacity-30"
             >
               <span className="flex items-center justify-center">
@@ -123,7 +114,7 @@ const HeaderNav = () => {
               <p className="text-center">Сравнить</p>
             </Link>
             <Link
-              href="#"
+              href="/basket"
               className="ml-3 rounded-md p-2 hover:bg-gray-300 hover:bg-opacity-30"
             >
               <span className="flex items-center justify-center">

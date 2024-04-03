@@ -1,12 +1,14 @@
+"use client";
+// img
 import Images1 from "@/assets/data/cata1.png";
 import { Like, Reyt } from "@/assets/images";
-import ButtonMy from "@/components/Button";
+// components
+import IntegrationNotistack from "@/components/SnicBack";
 import StarItem1 from "@/components/item1/Star";
-
-import { catalogDataPg } from "@/data/CatalogPgData";
+// next
 import Image from "next/image";
-import { useState } from "react";
-catalogDataPg;
+// react
+import React, { useState } from "react";
 
 const MainItem = () => {
   const [count, setCount] = useState(1);
@@ -28,7 +30,7 @@ const MainItem = () => {
             <button className="mx-1">
               <Reyt />
             </button>
-            <button className="mx-1">
+            <button className="mx-1 active:border active:bg-gray-100">
               <Like />
             </button>
           </div>
@@ -71,7 +73,8 @@ const MainItem = () => {
             <button className="mx-5 rounded-[30px] border px-6 py-3">
               Задать вопрос
             </button>
-            <ButtonMy>Добавить в корзину</ButtonMy>
+
+            <IntegrationNotistack />
           </div>
           <h1 className="mt-5 text-[16px] font-[500]">О товаре</h1>
           <p className="text-[12px] text-[#202020]">

@@ -14,7 +14,6 @@ import { Label } from "@/components/ui/label";
 import Image, { StaticImageData } from "next/image";
 
 interface Type {
-  handleClik: () => void;
   User: StaticImageData;
   inptVal1: string;
   inptVal2: string;
@@ -24,7 +23,6 @@ interface Type {
 }
 
 const Register: React.FC<Type> = ({
-  handleClik,
   User,
   inptVal1,
   setinptVal1,
@@ -37,7 +35,6 @@ const Register: React.FC<Type> = ({
       <DialogTrigger asChild>
         <Button
           variant="outline"
-          onClick={handleClik}
           className="mx-3 w-[45px] border-none bg-[#F8F7F3FF] bg-none hover:bg-[#F8F7F3FF]"
         >
           <span className="mx-3 rounded-md p-2 hover:bg-gray-300 hover:bg-opacity-30">
