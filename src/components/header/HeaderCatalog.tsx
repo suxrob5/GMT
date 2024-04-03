@@ -62,11 +62,8 @@ const HeaderCatalog = () => {
             />
             <li className="flex items-center justify-between">
               <Link
-<<<<<<< HEAD
-                className="mx-3 flex items-center text-[14px] hover:text-[#07745E] "
-=======
+                // className="mx-3 flex items-center text-[14px] hover:text-[#07745E] "
                 className="mx-3 text-[14px] hover:text-[#07745E] flex items-center "
->>>>>>> 14c798d236cb17e6771cfb947f56ee0f08cbb1f7
                 href="catalog"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
