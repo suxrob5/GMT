@@ -93,7 +93,7 @@ const HeaderNav = () => {
       {/*  */}
       <nav>
         <ul>
-          <li className="flex items-center justify-between">
+          <li className="hidden items-center justify-between sm:flex">
             <Register
               handleClik={handleClik}
               User={User}

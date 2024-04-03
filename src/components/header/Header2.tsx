@@ -20,26 +20,25 @@ const Header2 = () => {
       <Link href="/">
         <Image src={mainImg} alt="main img" />
       </Link>
-      <div className="flex items-center rounded-[20px] border-2 border-[#D5D1E1FF] bg-[#D5D1E1FF]">
+      <div className="flex h-[50px] w-[530px] items-center justify-between rounded-[25px] bg-[#D5D1E1FF]">
         {/* compoents Select */}
         <HeaderSelect />
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="flex">
           <input
             type="search"
             placeholder="Поиск"
-            className="rounded-r-[20px] px-5 py-3 text-[14px] focus:outline-none"
+            className="h-[46px] rounded-r-[20px] px-5 text-[14px] focus:outline-none"
           />
-          <button className="rounded-full px-4 py-2">
+          <button className="ml-[2px] rounded-[50%] p-3 hover:bg-white">
             <Image src={Search} alt="Search icon" width={15} />
           </button>
         </form>
       </div>
-      <p>
+      <p className="hidden sm:flex">
         Пн-Пт с 09:00-19:00 <br /> Сб-Вс - выходной
       </p>
       {/* under the header  components Links user,like,Compare,Basket */}
       <HeaderNav />
-    
     </div>
   );
 };

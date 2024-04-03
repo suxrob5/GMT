@@ -1,15 +1,16 @@
 import Image from "next/image";
 import { Button, Card } from "@mui/material";
-import { popularCatecorys } from "@/data/MiniData";
+import { catalogData } from "@/data/CatalogData";
+import { ButtonLeft, ButtonRight } from "../RightLeftBtns";
 
 const HorizontalCarousel = () => {
   return (
     <div className="h-200 bg-ec165e flex w-full items-center justify-center overflow-hidden">
       <div className="scrolling-touch scroll-snap-x-repeat-300 bg-ec165e flex overflow-x-auto scroll-smooth">
-        {popularCatecorys.map((item) => (
+        {catalogData.map((item) => (
           <Card
             key={item.id}
-            className="scroll-snap-start mr-50 rounded-10 m-5 w-[1519] flex-shrink-0 origin-center transform rounded-[10px] bg-[#EFEEEAFF] transition-transform duration-500"
+            className="scroll-snap-start mr-50 rounded-10 m-5 flex-shrink-0 origin-center transform rounded-[10px] bg-[#EFEEEAFF] transition-transform duration-500"
           >
             <button className="absolute left-5 top-5 rounded-[20px] border border-[#088269FF] px-3 py-2 font-[600] text-[#088269FF]">
               Новинка
@@ -22,7 +23,7 @@ const HorizontalCarousel = () => {
                   className="m-5 rounded-[10px]"
                 />
               </div>
-            
+
               <div className="mx-[20px]">
                 <p className="py-5 text-[16px] font-[600]">
                   {item.nameE} <br /> {item.nameL}
@@ -32,7 +33,7 @@ const HorizontalCarousel = () => {
                 <p className="text-[18px] font-[600]">{item.money}</p>
                 <Button
                   variant="outlined"
-                  className="mt-[20px] rounded-[20px] border border-gray-300 px-6 py-3 text-[#088269FF] hover:border-gray-300"
+                  className="mb-5 mt-[20px] rounded-[25px] border border-gray-300 px-6 py-3 text-[14px] text-[#088269FF] hover:border-gray-300"
                 >
                   Добавить в корзину
                 </Button>

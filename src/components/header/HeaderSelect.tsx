@@ -1,7 +1,6 @@
-
 const HeaderSelect = () => {
   return (
-    <select className="rounded-l-[20px] px-3 py-[11px] text-[14px] focus:outline-none">
+    <select className="ml-1 h-[46px] rounded-l-[25px] bg-[#EFEFEFFF] text-[14px] focus:outline-none xl:px-3">
       <option value="0">Все категории</option>
       <option value="1">Реанимация</option>
       <option value="2">Хирургия</option>
@@ -22,6 +21,6 @@ const HeaderSelect = () => {
       <option value="17">Кабинеты под ключ</option>
     </select>
   );
-}
+};
 
-export default HeaderSelect
+export default HeaderSelect;

@@ -41,7 +41,7 @@ const HeaderCatalog = () => {
   };
 
   return (
-    <div className="w-[100%] py-5">
+    <div className="w-[100%] border-b-2 py-5">
       <div className="mx-auto flex w-[90%] items-center justify-between">
         <nav>
           <ul className="absolute">
@@ -62,14 +62,14 @@ const HeaderCatalog = () => {
             />
             <li className="flex items-center justify-between">
               <Link
-                className="mx-3 text-[14px] hover:text-[#07745E] flex items-center "
-                href="#"
+                className="mx-3 flex items-center text-[14px] hover:text-[#07745E] "
+                href="catalog"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-              <span>
-                <Image src={CatalogImg} alt="catalog img" className="" />
-              </span>
+                <span>
+                  <Image src={CatalogImg} alt="catalog img" className="" />
+                </span>
                 Каталог
               </Link>
               <Link

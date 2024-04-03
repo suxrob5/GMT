@@ -28,7 +28,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-[100%]">
+    <header className="mx-auto w-[100%]">
       <div className="mx-auto flex w-[90%] items-center justify-between py-3">
         <nav className="relative">
           {/* components hover liks */}
@@ -45,7 +45,7 @@ const Header = () => {
             handleMouseLeaveBlog={handleMouseLeaveBlog}
           />
           <ul>
-            <li className="flex text-[#7A7687FF]">
+            <li className="hidden text-[#7A7687FF] sm:flex">
               <Link
                 href="#"
                 className="mr-3 hover:decoration-slice hover:text-[#07745E] hover:underline"
@@ -76,7 +76,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className="flex text-[#7A7687FF]">
+        <div className="hidden text-[#7A7687FF] sm:flex">
           <p className="mx-3">info@mail.ru</p>
           <p className="mx-3">г. Москва, ул. Московская, д. 35</p>
         </div>
@@ -89,7 +89,6 @@ const Header = () => {
       <hr />
 
       {/* components Catalogn  */}
-      {/* under the header  */}
       <HeaderCatalog />
     </header>
   );
