@@ -15,7 +15,8 @@ import { autoPlay } from "react-swipeable-views-utils-react-18-fix";
 // images
 import img1 from "@/assets/images/Banner.png";
 import Image from "next/image";
-// 
+import Link from "next/link";
+//
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -84,9 +85,11 @@ function SwipeableTextMobileStepper() {
                       <button className="rounded-[30px] bg-[#088269FF] px-5 py-3 text-[14px] text-white">
                         Запросить цену
                       </button>
-                      <button className="mx-5 rounded-[30px] border border-gray-500 px-5 py-3 text-[14px]">
-                        В каталог
-                      </button>
+                      <Link href="/catalog">
+                        <button className="mx-5 rounded-[30px] border border-gray-500 px-5 py-3 text-[14px]">
+                          В каталог
+                        </button>
+                      </Link>
                     </div>
                   </div>
                   <Image src={step.imgPath} alt={step.label} />
