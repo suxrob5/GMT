@@ -1,24 +1,18 @@
 "use client";
-
 import * as React from "react";
 // MUI
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
-import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views-react-18-fix";
 import { autoPlay } from "react-swipeable-views-utils-react-18-fix";
-// images
+// next images
 import Image from "next/image";
-import Link from "next/link";
+// data
 import { complexData, complexData2 } from "@/data/ComplexData";
-import { ButtonRight } from "../RightLeftBtns";
+//icon images
 import { Left, Right } from "@/assets/images";
-//
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 

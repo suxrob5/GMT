@@ -1,16 +1,7 @@
-// my data
-import { complexData, complexData2 } from "@/data/ComplexData";
-// next image
-import Image from "next/image";
-import { ButtonLeft, ButtonRight } from "./RightLeftBtns";
-import { useState } from "react";
+// components
 import ComplexCarousel from "./ComplexCarousel/ComplexCarousel";
 
 const Complex = () => {
-  const [core, setcore] = useState("");
-
-  const handleRight = () => {};
-  const handleLeft = () => {};
   return (
     <div className="mt-[100px]">
       <div>
@@ -20,20 +11,6 @@ const Complex = () => {
           </h1>
         </div>
         <section className="mx-auto mt-[50px] flex w-[90%] items-center justify-between">
-          {/* {complexData.map((item) => (
-            <div key={item.id} className="rounded-[10px] border">
-              <div>
-                <Image
-                  src={item.img}
-                  className="rounded-[10px]"
-                  alt={item.alt}
-                />
-              </div>
-              <div>
-                <p className="mx-5 p-5 text-[16px] font-[500]">{item.title}</p>
-              </div>
-            </div>
-          ))} */}{" "}
           <ComplexCarousel />
         </section>
 

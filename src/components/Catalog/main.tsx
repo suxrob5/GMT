@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Button, Card } from "@mui/material";
+import { Card } from "@mui/material";
 import { catalogData } from "@/data/CatalogData";
-import { ButtonLeft, ButtonRight } from "../RightLeftBtns";
+import CatalogHandleBusket from "./CatalogHandleBusket";
 
 const HorizontalCarousel = () => {
   return (
@@ -23,7 +23,6 @@ const HorizontalCarousel = () => {
                   className="m-5 rounded-[10px]"
                 />
               </div>
-
               <div className="mx-[20px]">
                 <p className="py-5 text-[16px] font-[600]">
                   {item.nameE} <br /> {item.nameL}
@@ -31,12 +30,9 @@ const HorizontalCarousel = () => {
                 <p>Артикул: {item.aticul}</p>
                 <p>{item.nalich}</p>
                 <p className="text-[18px] font-[600]">{item.money}</p>
-                <Button
-                  variant="outlined"
-                  className="mb-5 mt-[20px] rounded-[25px] border border-gray-300 px-6 py-3 text-[14px] text-[#088269FF] hover:border-gray-300"
-                >
-                  Добавить в корзину
-                </Button>
+                <div className="mb-5 mt-5">
+                  <CatalogHandleBusket data={item} />
+                </div>
               </div>
             </div>
           </Card>
