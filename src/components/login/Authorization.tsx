@@ -22,7 +22,7 @@ interface Type {
   setinptVal1: (value: string) => void;
 }
 
-const Register: React.FC<Type> = ({
+const Authorization: React.FC<Type> = ({
   User,
   inptVal1,
   setinptVal1,
@@ -89,4 +89,4 @@ const Register: React.FC<Type> = ({
   );
 };
 
-export default Register;
+export default Authorization;

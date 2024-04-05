@@ -26,7 +26,7 @@ interface PopularCatecorysType {
 // data
 export const popularCatecorys: PopularCatecorysType[] = [
   {
-    id: 1,
+    id: 37,
     title: "Дерматологическое оборудование",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -38,7 +38,7 @@ export const popularCatecorys: PopularCatecorysType[] = [
     div: "div1",
   },
   {
-    id: 2,
+    id: 38,
     title: "Дерматологическое оборудование",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -50,7 +50,7 @@ export const popularCatecorys: PopularCatecorysType[] = [
     div: "div2",
   },
   {
-    id: 3,
+    id: 39,
     title: "Оборудование для анастезиологии",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -62,7 +62,7 @@ export const popularCatecorys: PopularCatecorysType[] = [
     div: "div3",
   },
   {
-    id: 4,
+    id: 40,
     title: "Мебель для медецинских целей",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -74,7 +74,7 @@ export const popularCatecorys: PopularCatecorysType[] = [
     div: "div4",
   },
   {
-    id: 5,
+    id: 41,
     title: "Ветеринарное оборудование",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -86,7 +86,7 @@ export const popularCatecorys: PopularCatecorysType[] = [
     div: "div5",
   },
   {
-    id: 6,
+    id: 42,
     title: "Оборудование для анастезиологии",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -98,7 +98,7 @@ export const popularCatecorys: PopularCatecorysType[] = [
     div: "div6",
   },
   {
-    id: 7,
+    id: 43,
     title: "Дерматологическое оборудование",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",

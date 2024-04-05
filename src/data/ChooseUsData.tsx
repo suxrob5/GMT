@@ -16,25 +16,25 @@ interface DataType {
 
 export const ChooseUsData: DataType[] = [
   {
-    id: 1,
+    id: 25,
     title: "Быстрая доставка",
     img: img1,
     alt: "Быстрая доставка",
   },
   {
-    id: 2,
+    id: 26,
     title: "Весь товар сертифицирован",
     img: img2,
     alt: "Весь товар сертифицирован",
   },
   {
-    id: 3,
+    id: 27,
     title: "Гибкая система скидок",
     img: img3,
     alt: "Гибкая система скидок",
   },
   {
-    id: 4,
+    id: 28,
     title: "Лет на рынке",
     img: img4,
     alt: "Лет на рынке",

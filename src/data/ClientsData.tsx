@@ -18,31 +18,31 @@ interface ClientsDataType {
 // data
 export const clientsData: ClientsDataType[] = [
   {
-    id: 1,
+    id: 29,
     title: "НМИЦ онкологии им. Н.Н. Блохина",
     img: Images1,
     alt: "data images",
   },
   {
-    id: 2,
+    id: 30,
     title: "НМИЦ онкологии им. Н.Н. Блохина",
     img: Images2,
     alt: "data images 2",
   },
   {
-    id: 3,
+    id: 31,
     title: "НМИЦ онкологии им. Н.Н. Блохина",
     img: Images3,
     alt: "data images 3",
   },
   {
-    id: 4,
+    id: 32,
     title: "НМИЦ онкологии им. Н.Н. Блохина",
     img: Images4,
     alt: "data images 4",
   },
   {
-    id: 5,
+    id: 33,
     title: "НМИЦ онкологии им. Н.Н. Блохина",
     img: Images5,
     alt: "data images 5",

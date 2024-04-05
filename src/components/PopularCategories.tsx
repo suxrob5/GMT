@@ -3,8 +3,15 @@
 import { popularCatecorys } from "@/data/MiniData";
 // next images
 import Image from "next/image";
+import PopularCategoriesFast from "./FastSee/PopularCategoriesFast";
+import Link from "next/link";
+import { Card, CardActionArea } from "@mui/material";
 
 const PopularCategories = () => {
+  const handleFast = (item: {}) => {
+    console.log(item);
+  };
+
   return (
     <div className="mt-[100px]">
       <div>
@@ -17,17 +24,26 @@ const PopularCategories = () => {
         <section className="parent mx-auto mt-[50px] grid w-[90%] grid-cols-4">
           {popularCatecorys.map((item) => (
             <div
-              key={item.id}
               className={`w-[300px] rounded-[10px] border ${item.div} mt-5`}
+              key={item.id}
             >
-              <div className="flex items-center justify-center rounded-[10px] bg-white">
-                <Image
-                  src={item.img}
-                  alt={item.alt}
-                  className="m-5 rounded-[10px]"
-                />
+              <Link href={`items/${item.id}`}>
+                <div>
+                  <div className="flex items-center justify-center rounded-[10px] bg-white">
+                    <Image
+                      src={item.img}
+                      alt={item.alt}
+                      className="m-5 rounded-[10px]"
+                    />
+                  </div>
+                  <p className="py-5 text-center text-[14px]">{item.title}</p>
+                </div>
+              </Link>
+              <div className="relative h-[50px]">
+                <span onClick={() => handleFast(item)} className="absolute">
+                  <PopularCategoriesFast item={item} />
+                </span>
               </div>
-              <p className="py-5 text-center text-[14px]">{item.title}</p>
             </div>
           ))}
         </section>

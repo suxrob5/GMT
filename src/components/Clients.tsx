@@ -21,7 +21,7 @@ const Clients = () => {
           {clientsData.map((item) => (
             <div
               key={item.id}
-              className="m-5 h-[250px] w-[300px] rounded-[10px] border bg-[#F8F7F3FF]"
+              className="m-5 h-[270px] w-[300px] rounded-[10px] border bg-[#F8F7F3FF]"
             >
               <div className="flex items-center justify-center rounded-[10px] bg-white">
                 <Image

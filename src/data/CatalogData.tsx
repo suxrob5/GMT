@@ -26,7 +26,7 @@ interface CatalogDataType {
 // data
 export const catalogData: CatalogDataType[] = [
   {
-    id: 1,
+    id: 15,
     title: "Дерматологическое оборудование",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -38,7 +38,7 @@ export const catalogData: CatalogDataType[] = [
     div: "div1",
   },
   {
-    id: 2,
+    id: 16,
     title: "Дерматологическое оборудование",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -50,7 +50,7 @@ export const catalogData: CatalogDataType[] = [
     div: "div2",
   },
   {
-    id: 3,
+    id: 17,
     title: "Оборудование для анастезиологии",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -62,7 +62,7 @@ export const catalogData: CatalogDataType[] = [
     div: "div3",
   },
   {
-    id: 4,
+    id: 18,
     title: "Мебель для медецинских целей",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -74,7 +74,7 @@ export const catalogData: CatalogDataType[] = [
     div: "div4",
   },
   {
-    id: 5,
+    id: 19,
     title: "Ветеринарное оборудование",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -86,7 +86,7 @@ export const catalogData: CatalogDataType[] = [
     div: "div5",
   },
   {
-    id: 6,
+    id: 20,
     title: "Оборудование для анастезиологии",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
@@ -98,7 +98,7 @@ export const catalogData: CatalogDataType[] = [
     div: "div6",
   },
   {
-    id: 7,
+    id: 21,
     title: "Дерматологическое оборудование",
     nameE: "Анализатор мочи",
     nameL: "MIND UA-66",
