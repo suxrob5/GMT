@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Card } from "@mui/material";
 import { catalogData } from "@/data/CatalogData";
 import CatalogHandleBusket from "./CatalogHandleBusket";
+import CatalogHandleFast from "./CatalogFast";
 
 const HorizontalCarousel = () => {
   return (
@@ -32,6 +33,7 @@ const HorizontalCarousel = () => {
                 <p className="text-[18px] font-[600]">{item.money}</p>
                 <div className="mb-5 mt-5">
                   <CatalogHandleBusket data={item} />
+                  <CatalogHandleFast item={item} />
                 </div>
               </div>
             </div>

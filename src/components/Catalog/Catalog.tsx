@@ -4,6 +4,7 @@ import Link from "next/link";
 import HorizontalCarousel from "./main";
 import { ButtonLeft, ButtonRight } from "../RightLeftBtns";
 import ButtonMy from "../Button";
+import CatalogHandleFast from "./CatalogFast";
 
 const Catalog = () => {
   return (
