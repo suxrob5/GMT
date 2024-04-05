@@ -38,7 +38,7 @@ const CatalogHandleFast: React.FC<Types> = ({ item }) => {
 
   return (
     <div>
-      <Button onClick={handleOpen} className="mx-5 mt-5 text-[#088269]">
+      <Button onClick={handleOpen} className=" mt-5 text-[#088269] text-[14px]">
         Быстырй просмотр
       </Button>
       <Modal

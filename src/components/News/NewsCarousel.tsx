@@ -14,7 +14,7 @@ const NewsCarousel = () => {
             className="scroll-snap-start mr-50 rounded-10 m-5 w-[1519] flex-shrink-0 origin-center transform rounded-[10px] bg-[#EFEEEAFF] transition-transform duration-500"
           >
             <CardActionArea>
-              <div className="h-[450px] w-[300px] rounded-[10px]">
+              <div className="h-[470px] w-[300px] rounded-[10px]">
                 <div className="flex h-[300px] w-[300px] items-center justify-center rounded-[10px]">
                   <Image
                     src={item.img}
@@ -27,7 +27,7 @@ const NewsCarousel = () => {
                   {item.name}
                 </h1>
                 <div className="mx-[20px]">
-                  <p className="py-5 text-[15px] font-[500] text-[#7A7687]">
+                  <p className="mb-5 py-5 text-[15px] font-[500] text-[#7A7687]">
                     {item.title}
                   </p>
                 </div>
