@@ -1,3 +1,4 @@
+"use client";
 // shadc UI
 import { Button } from "@/components/ui/button";
 import {
@@ -12,6 +13,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Image, { StaticImageData } from "next/image";
+import { FormEvent } from "react";
 
 interface Type {
   User: StaticImageData;
@@ -84,6 +86,19 @@ const Register: React.FC<Type> = ({
             Регистрация
           </Button>
         </DialogClose>
+        <span>
+          <input
+            type="checkbox"
+            id="checkbox"
+            className="mr-3 h-[15px] w-[15px] accent-[#088269FF]"
+          />
+          <label htmlFor="checkbox" className="text-[14px]">
+            Я соглашаюсь c обработкой персональных данных на условиях{" "}
+            <span className="text-[#088269FF]">
+              Политики конфиденциальности.
+            </span>
+          </label>
+        </span>
       </DialogContent>
     </Dialog>
   );

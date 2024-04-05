@@ -37,7 +37,7 @@ const HeaderNav = () => {
     setinptVal2("");
   };
   return (
-    <>
+    <div className="hidden sm:grid">
       <Dialog>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
@@ -125,7 +125,7 @@ const HeaderNav = () => {
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   );
 };
 

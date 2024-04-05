@@ -41,7 +41,7 @@ const HeaderCatalog = () => {
   };
 
   return (
-    <div className="w-[100%] border-b-2 py-5">
+    <div className="w-[100%] border-b-2 py-5 hidden sm:grid">
       <div className="mx-auto flex w-[90%] items-center justify-between">
         <nav>
           <ul className="absolute">

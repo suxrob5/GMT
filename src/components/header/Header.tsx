@@ -8,6 +8,11 @@ import HoverComapany from "./HoverComapany";
 import HoverBlog from "./HoverBlog";
 import Header2 from "./Header2";
 import HeaderCatalog from "./HeaderCatalog";
+// next img
+import Image from "next/image";
+//images
+import MainImg from "@/assets/icons/main.svg";
+import { Bar, Telephone } from "@/assets/images";
 
 const Header = () => {
   const [isHoverCompany, setisHoverCompany] = useState(false);
@@ -83,7 +88,18 @@ const Header = () => {
       </div>
       <hr />
       {/*compoents header-2 */}
+      <div className="flex items-center justify-between">
+        <Image src={MainImg} alt="mian img" className="grid sm:hidden" />
 
+        <div className="flex">
+          <button className="gird sm:hidden">
+            <Telephone />
+          </button>
+          <button className="gird sm:hidden">
+            <Bar />
+          </button>
+        </div>
+      </div>
       <Header2 />
 
       <hr />
