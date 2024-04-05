@@ -17,7 +17,6 @@ import Footer from "@/components/Footer/Footer";
 const Home = () => {
   return (
     <>
-      {/*  */}
       <div>
         {/* Header */}
         <header>
