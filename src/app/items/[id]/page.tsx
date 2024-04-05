@@ -15,6 +15,8 @@ import { useEffect, useState } from "react";
 import MainItem from "./main";
 import { StaticImageData } from "next/image";
 import BreadcrumbItem1 from "./Bredcumb";
+// images
+import img from "@/assets/icons/main.svg";
 
 interface Types {
   params: {
@@ -22,14 +24,18 @@ interface Types {
   };
 }
 
-interface Type {
+interface ProductType {
   id: number;
   title: string;
   img: StaticImageData;
 }
 
 const ProductPage: React.FC<Types> = ({ params: { id } }) => {
-  const [data, setdata] = useState<Type>([]);
+  const [data, setdata] = useState<ProductType>({
+    id: 0,
+    title: "",
+    img: img,
+  });
   console.log(data);
 
   useEffect(() => {
